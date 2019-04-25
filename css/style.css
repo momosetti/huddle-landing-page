@@ -29,13 +29,19 @@ header {
 }
 
 .logo {
-  margin: 40px 0 0 50px;
+  margin: 40px 0 50px 70px;
+}
+.logo > img {
+  height: 45px;
+}
+.ulls > img {
+  height: 430px;
 }
 
 .social {
   text-align: right;
   margin-right: 50px;
-  margin-top: -40px;
+  margin-top: -10px;
   color: white;
 }
 
@@ -44,6 +50,8 @@ i.fa {
   border-radius: 60px;
   box-shadow: 0px 0px 1px white;
   padding: 0.5em 0.5em;
+  margin: 0 0.5em 0 0.5em;
+  font-size: 1.2rem;
 }
 
 .descrption {
@@ -57,24 +65,22 @@ i.fa {
 }
 
 button {
-  width: 9.9rem;
+  width: 11rem;
   height: 2.8rem;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-weight: 500;
+  letter-spacing: 0.1rem;
   color: #ad4ebb;
   background-color: #fff;
   border: none;
   border-radius: 45px;
-  box-shadow: 1px 10px 14px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 14px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 }
-
 button:hover {
   background-color: #ad4ebb;
   color: #fff;
@@ -83,22 +89,56 @@ button:hover {
 
 @media screen and (max-width: 500px) {
   body {
-    background-color: olive;
+    background-color: hsl(257, 40%, 49%);
     height: 100%;
+  }
+  .logo > img {
+    height: 40px;
+  }
+  .ulls > img {
+    height: 250px;
+  }
+  .descrption > h1 {
+    font-size: 1.5em;
+    line-height: 1.8rem;
+  }
+  .descrption > p {
+    font-size: 1em;
+    margin-top: 50px;
   }
   .container {
     display: block;
+  }
+  header {
+    margin: 50px 30px 0 30px;
   }
   .descrption {
     text-align: center;
   }
   .social {
     position: absolute;
+    text-align: center;
+    margin-top: 50px;
   }
-  .ulls {
-    height: 10%;
-  }
-  .ulls {
-    margin: 100px 0 100px 0;
+
+  button {
+    align-items: center;
+    width: 18rem;
+    height: 2.8rem;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    color: #ad4ebb;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 1px 10px 14px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
   }
 }
