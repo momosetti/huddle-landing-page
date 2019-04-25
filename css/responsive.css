@@ -1,0 +1,70 @@
+@media screen and (max-width: 500px) {
+  body {
+    font-family: "Open Sans", sans-serif;
+    background: hsl(257, 40%, 49%);
+    background-image: url("../images/bg-desktop.svg");
+    height: 100%;
+  }
+
+  .logo {
+    margin: 40px 0 50px 50px;
+  }
+
+  .logo > img {
+    margin: 0;
+    height: 35px;
+  }
+
+  .ulls > img {
+    height: 250px;
+  }
+
+  .descrption > h1 {
+    font-size: 1.5em;
+    line-height: 1.8rem;
+  }
+
+  .descrption > p {
+    font-size: 1em;
+    margin-top: 50px;
+  }
+
+  .container {
+    display: block;
+  }
+
+  header {
+    margin: 50px 30px 0 50px;
+  }
+
+  .descrption {
+    text-align: center;
+  }
+
+  .social {
+    position: absolute;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  button {
+    align-items: center;
+    width: 18rem;
+    height: 2.8rem;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    color: #ad4ebb;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 1px 10px 14px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+  }
+}
