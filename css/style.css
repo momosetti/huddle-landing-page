@@ -5,13 +5,13 @@ body {
   font-weight: 400;
   background: hsl(257, 40%, 49%);
   background-image: url("../images/bg-desktop.svg");
-  height: auto;
+  height: 100%;
 }
 
 .container {
   display: flex;
   grid-template-rows: auto;
-  margin: 0 50px 0 50px;
+  margin: 60px 50px 0 50px;
   color: white;
   font-size: 1rem;
 }
@@ -28,14 +28,37 @@ header {
   margin: 30px 50px 50px 50px;
 }
 
+.logo {
+  margin: 40px 0 0 50px;
+}
+
+.social {
+  text-align: right;
+  margin-right: 50px;
+  margin-top: -40px;
+  color: white;
+}
+
+i.fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 1px white;
+  padding: 0.5em 0.5em;
+}
+
 .descrption {
-  margin-left: 40px;
+  margin-left: 90px;
   margin-top: 50px;
+  width: 40%;
+}
+.descrption > h1 {
+  font-size: 2.2rem;
+  line-height: 3.4rem;
 }
 
 button {
-  width: 160px;
-  height: 45px;
+  width: 9.9rem;
+  height: 2.8rem;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
@@ -58,25 +81,24 @@ button:hover {
   transform: translateY(-1px);
 }
 
-.social {
-  text-align: right;
-  margin-right: 50px;
-  margin-top: -20px;
-  color: white;
-}
-
-i.fa {
-  display: inline-block;
-  border-radius: 60px;
-  box-shadow: 0px 0px 1px white;
-  padding: 0.5em 0.5em;
-}
-
-@media only screen and (max-width: 375px) {
-  .social {
+@media screen and (max-width: 500px) {
+  body {
+    background-color: olive;
+    height: 100%;
+  }
+  .container {
+    display: block;
+  }
+  .descrption {
     text-align: center;
-    margin-right: 50px;
-    margin-top: -20px;
-    color: white;
+  }
+  .social {
+    position: absolute;
+  }
+  .ulls {
+    height: 10%;
+  }
+  .ulls {
+    margin: 100px 0 100px 0;
   }
 }
