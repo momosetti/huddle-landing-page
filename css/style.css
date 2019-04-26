@@ -10,7 +10,6 @@ body {
 
 .container {
   display: flex;
-  grid-template-rows: auto;
   margin: 60px 50px 0 50px;
   color: white;
   font-size: 1rem;
@@ -48,7 +47,7 @@ header {
 i.fa {
   display: inline-block;
   border-radius: 60px;
-  box-shadow: 0px 0px 1px white;
+  box-shadow: 0px 0px 2px white;
   padding: 0.5em 0.5em;
   margin: 0 0.5em 0 0.5em;
   font-size: 1.2rem;
@@ -80,6 +79,9 @@ button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
 }
 button:hover {
   background-color: #ad4ebb;
