@@ -2,28 +2,25 @@
   body {
     font-family: "Open Sans", sans-serif;
     background: hsl(257, 40%, 49%);
-    background-image: url("../images/bg-desktop.svg");
-    margin: 0;
-  }
-
-  * {
-    margin: 0;
+    background-image: url("../images/bg-mobile.svg");
+    background-size: cover;
   }
 
   header {
-    margin: 40px 0 30px 30px;
+    margin-left: 10vw;
   }
   header > img {
-    height: 40px;
+    height: 8vw;
   }
 
   .container {
-    display: block;
-    margin: 0 30px 0 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
   }
 
   .ulls > img {
-    height: 300px;
+    height: 50vw;
     margin: 0 auto;
   }
 
@@ -31,8 +28,8 @@
     margin: 0 auto;
   }
   .descrption > h1 {
-    font-size: 1.5rem;
-    line-height: 1.9rem;
+    font-size: 5vw;
+    line-height: 7vw;
     text-align: center;
     margin: 10px 0 10px 0;
   }
@@ -41,8 +38,8 @@
     margin: 10px 0 10px 0;
   }
 
-  button {
-    width: 14rem;
+  .btn {
+    width: 15rem;
     height: 2.8rem;
     font-weight: bold;
     font-family: "Open Sans", sans-serif;
@@ -57,5 +54,12 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    position: absolute;
+    margin: 5vw 0 5vw -10vw;
+  }
+
+  .social {
+    position: absolute;
+    margin: 19vw 10vw 5vw 30vw;
   }
 }

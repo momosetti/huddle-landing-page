@@ -79,9 +79,6 @@ button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;
 }
 button:hover {
   background-color: #ad4ebb;
